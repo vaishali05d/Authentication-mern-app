@@ -1,0 +1,86 @@
+
+*,
+::before,
+::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+label{
+  font-size: 20px;
+}
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F0CAC9;
+  background-image: 
+      linear-gradient(90deg, #e99e95 7px, transparent 0),
+      linear-gradient(90deg, #a7b3c5 23px, transparent 0),
+      linear-gradient(90deg, #6d95af 23px, transparent 0);
+  background-size: 43px 100%, 61px 100%, 89px 100%;
+  
+  /* background: #ebc1e9; */
+}
+
+.container{
+  background-color: #faf5fc;
+  padding: 32px 48px;
+  border-radius: 10px;
+  width: 100%;
+  min-width: 400px;
+  box-shadow: rgba(26, 26, 29, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.container > h1{
+  margin-bottom: 20px;
+  color: darkmagenta;
+  text-shadow: 
+                2px 3px 2px #777676, 
+                2px 3px 2px #838181, 
+                2px 3px 2px #9c9b9a, 
+                2px 3px 2px #afafae;
+}
+
+.container > form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container div{
+  display: flex;
+  flex-direction: column;
+}
+
+.container input{
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.container input::placeholder{
+  font-size: 12px;
+  font-style: italic;
+}
+
+button{
+  background-color: purple;
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
